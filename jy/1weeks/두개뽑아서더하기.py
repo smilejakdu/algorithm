@@ -11,6 +11,7 @@ def solution1(numbers):
 def solution2(numbers):
     answer = []
     l = list(combinations(numbers, 2))
+    print(l)
     for i in l:
         answer.append(i[0]+i[1])
     return sorted(list(set(answer)))
