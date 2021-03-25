@@ -1,3 +1,12 @@
+'''
+
+7
+[2,4,5,6,7]
+[1,3,4,5,6,7]
+7
+'''
+
+
 def solution(n, lost, reserve):
     
     
@@ -20,3 +29,4 @@ def solution(n, lost, reserve):
         answer = n - len(lost) + len(duplicates) +len(reserve_new)
     
     return answer
+
