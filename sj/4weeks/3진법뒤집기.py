@@ -21,6 +21,7 @@ def three_number_change(n):
         answer = str(remain) + answer
         if n < 3:
             answer = str(n) + answer
+    print(answer)
     return answer
 
 def ten_number_change(n):
@@ -37,3 +38,5 @@ def solution(n):
     answer = three_number_change(n)
     answer = ten_number_change(str(int(answer[::-1])))
     return answer
+
+print(solution(45))
