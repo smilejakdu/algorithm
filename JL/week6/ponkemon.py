@@ -4,7 +4,4 @@ def solution(nums):
     poke_num = int(len(nums)/2)
 
     dif_num = len(set(nums))
-    if dif_num > poke_num:
-        return poke_num
-    else:
-        return dif_num
+    return poke_num if dif_num > poke_num else dif_num
