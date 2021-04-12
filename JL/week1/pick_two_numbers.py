@@ -4,7 +4,6 @@ def solution(numbers):
         for j,val2 in enumerate(numbers):
             if i!=j:
                 answer.append(val1+val2)
-            #answer = list(dict.fromkeys(answer))
-            answer = list(set(answer)) # shorter way
+            answer = list(dict.fromkeys(answer))
     answer.sort()
     return answer
