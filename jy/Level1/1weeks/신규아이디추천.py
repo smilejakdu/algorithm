@@ -9,7 +9,7 @@ def solution(new_id):
     
     # stage 3
     # new_id = re.sub(r'((.)\2+)', '.', new_id)
-    new_id = re.sub(r'[.]{2,}', '.', new_id)    
+    new_id = re.sub(r'[.]{2,}', '', new_id)
     
     # stage 4
     new_id = re.sub('^[.]|[.]$', '', new_id)   
